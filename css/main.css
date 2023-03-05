@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    display:flex;
+    height: 200px;
+    background: linear-gradient(to bottom, #240248, #787575);
+    align-items: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.gridcontainer {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 10px 40px;
+}
+
+.contimagen {
+    height: 200px;
+    margin: 0 auto;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.contproducto {
+    height: 320px;
+    margin:0 auto;
+    border: 1px solid grey;
+}
+
+.estrellitas {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 50px;
+    width:300px;
+}
+
+.estrellita {
+    width: 60px;
+    height: 50px;
+}
+
+.imagenestrella {
+    width: 60px;
+    height: 50px;
+}
+
+.button {
+    text-align: center;
+}
+
+.tabla {
+    border:1px solid black;
+    width: 80%;
+    margin:0 auto;
+}
+
+td, th {
+    text-align: center;
+    border-bottom:2px solid gray;
+    background-color: white;
+}
+
+
+.imagentabla {
+    width: 60px;
+    height: 50px;
+}
+
+#total {
+    text-align: right;
+    margin-right: 200px;
+}
+
+.hidden {
+    display:none;
+}
+
+.carro {
+    position:absolute;
+    background-color: white;
+    width: 622px;
+    height: 298px;
+    top: 13%;
+    left: 4%;
+}
+
+#vaciar {
+    position: absolute;
+    left: 64px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border:3px groove black;
+}
+
+button:hover {
+    background-color: #240248;
+}
+
+.icono-carrito::before {
+    position: absolute;
+    content: "\f07a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: white;
+    top: 128px;
+    right: 186px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .icono-carrito::before {
+        position: absolute;
+        content: "\f07a";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 5.5rem;
+        color: white;
+        top: 90px;
+        right: 44px;
+      }
+
+      .gridcontainer {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 10px 40px;
+    }
+
+    .carro {
+        position:absolute;
+        background-color: white;
+        width: 622px;
+        height: 298px;
+        top: 13%;
+        left: 37%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .gridcontainer {
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 10px 40px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .carro {
+        position:absolute;
+        background-color: white;
+        width: 622px;
+        height: 298px;
+        top: 13%;
+        left: 52%;
+    }
+  }
