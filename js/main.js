@@ -1,5 +1,5 @@
 
-//este es el bueno
+//correcto
 //función init que reconozca parámetros, para mostrar el carro o los productos
 // función consulta que consultará en función de lo que se quiera hacer
 // el producto tendrá como keys: brand, title imagen y price
